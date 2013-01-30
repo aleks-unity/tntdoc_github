@@ -6,7 +6,7 @@ namespace APIDocumentationGenerator
 	{
 		private static void Main(string[] args)
 		{
-			var processor = new DirectoryProcessorHg();
+			var processor = new DirectoryProcessorGitHub();
 			processor.Process();
 		}
 	}

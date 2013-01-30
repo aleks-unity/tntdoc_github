@@ -11,4 +11,5 @@ DocBuilderTools/bin/*
 DocBuilderTools/obj/*
 BookBuilder/bin/*
 BookBuilder/obj/*
+UnityDocBrowser/Assets/*
 UnityDocBrowser/Assets/Editor/*
