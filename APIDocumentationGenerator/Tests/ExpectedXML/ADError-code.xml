@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MemberItem id="ADError._code" kind="Property">
+  <Property>
+    <ClassName>ADError</ClassName>
+    <Name>code</Name>
+    <Type>ADErrorCode</Type>
+  </Property>
+  <Summary>An error code.</Summary>
+</MemberItem>

@@ -1,0 +1,27 @@
+<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".html" encoding="utf-8" #>
+
+
+<html>
+<head>
+<title> This is <#= m_data.m_class #> . <#= m_data.m_member #> </title>
+</head>
+
+<body>
+
+<table>
+<# foreach (Example item in m_data.m_examples) 
+   { #>
+      <tr><td> <#= item.m_languageID #> </td>
+          <td> <#= item.m_expression #> </td></tr>
+<# } // end of foreach
+#>
+</table>
+
+
+<p>The content of the body element is displayed in the browser.</p>
+<p>The content of the title element is displayed in the browser's title.</p>
+</body>
+
+</html>
+

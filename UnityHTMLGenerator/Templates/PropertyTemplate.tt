@@ -1,0 +1,189 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".html" encoding="utf-8" #>
+
+<!-- #BeginTemplate "/Templates/manual-scriptref-page.dwt" -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+ <!-- #TemplateBeginEditable name="doctitle" -->
+   <title>Unity Script Reference &ndash; 
+
+
+    <#= m_data.m_class #>.<#= m_data.m_member #>
+
+
+   </title>
+ <!-- #TemplateEndEditable -->
+
+<link rel="StyleSheet"  href="docs.css" type="text/css" />
+
+<style>
+
+/* 
+Unity standard fonts 
+*/
+body{ font-family:Helvetica, Arial, sans-serif; font-size:.9em; }
+
+/*
+simple format for code, using fixed width
+and a nice border
+*/
+
+pre { font-family:"Courier New", Courier, monospace; font-size:.8em; }
+pre { padding:10px; margin:10px; border:1px #d8d8d8 solid; }
+pre { -moz-border-radius:10px; -webkit-border-radius:10px; }
+pre { background:#f8f8f8; }
+
+/*
+aligns the selection dialog on the top right
+*/
+
+.selectLang { margin-right:10px; text-align:right; float:right; }
+
+
+.cSelect,
+.cSelect ul,
+.cSelect li { font-size:12px; }
+
+/*.cSelect { border:1px solid #d0d0d0; }
+.cSelect { background:#ddf; }*/
+
+/*
+.cSelect { -moz-border-radius:10px; -webkit-border-radius:10px; }
+*/
+
+.cSelect { display:inline-block; position:relative; float:right; margin-right:20px;}
+.cSelect { padding-top:.4em; padding-bottom:.2em;}
+.cSelect-Selected,
+.cSelect-ArrowDown,
+.cSelect li { cursor:pointer; }
+
+.cSelect,
+.roundTop { -webkit-border-top-left-radius:10px; -webkit-border-top-right-radius:10px; }
+.cSelect,
+.roundTop { -moz-border-radius-topleft:10px; -moz-border-radius-topright:10px; }
+
+.roundBottom,
+.cSelect ul { -webkit-border-bottom-left-radius:10px; -webkit-border-bottom-right-radius:10px; }
+.roundBottom,
+.cSelect ul { -moz-border-radius-bottomleft:10px; -moz-border-radius-bottomright:10px; }
+
+
+.cSelectWidth { width:10em; display:block;}
+
+.cSelect-wrapper { position:relative; }
+
+.cSelect ul { background:#fff; padding:0px; margin:0px; display:inline-block; }
+.cSelect ul { z-index:10; position:absolute; top:1.3em; }
+.cSelect ul { padding-bottom:.5em; padding-top:.5em; padding-left:0px; padding-right:0px; }
+
+/*.cSelect ul { border:1px solid #d0d0d0; }*/
+
+
+.cSelect li { padding:.1em; margin:0px; text-align:right; list-style-type:none; }
+.cSelect li { padding-left:.7em; padding-right:24px; }
+
+.cSelect-highlight { background:#f0f0f0; }
+
+.cSelect-Selected { margin-left:.5em; margin-right:.5em; text-align:right; float:right; width:75%}
+
+.cSelect-ArrowDown { width:18px; height:18px; display:inline-block; float:right}
+.cSelect-ArrowDown { background:url('../Images/down-arrow.png'); text-align:center; }
+.cSelect-ArrowDown { -moz-border-radius:9px; -webkit-border-radius:9px; }
+
+.monoCompatibility-roweven { background-color:#DCDDDF; }
+.monoCompatibility-rowodd { background-color:#F3F3F4; }
+.monoCompatibility-cell { border:1px solid #ffffff;}
+
+
+</style>
+</head>
+
+<body>
+
+
+<div class="scriprefmain">
+
+  <span class="heading">
+   <!-- #TemplateBeginEditable name="title" -->
+   <h2>
+    <a href='<#= m_data.m_class #>.html' class='classlink' title='Go to Color scripting documentation'> <#= m_data.m_class #> </a>.<#= m_data.m_member #>
+   </h2>
+   <!-- #TemplateEndEditable --> 
+  </span>
+
+
+<!-- #TemplateBeginEditable name="details" -->
+ <span class="text"></span>
+<!-- #TemplateEndEditable --> 
+
+ <!-- #TemplateBeginEditable name="manual-top-nav" -->
+ 
+ <!-- #TemplateEndEditable -->
+
+
+<!-- #TemplateBeginEditable name="body" -->
+<div class="manual-entry">
+ <h3>
+  <span class="hl-keyword">var</span> <#= m_data.m_member #> : <span class="hl-datatype"><#= m_data.m_type #></span>
+ </h3>
+ 
+ <h3 class="soft">
+  Description
+ </h3>
+
+ <p class="details"> 
+  <#= m_data.m_description #>
+ </p>
+
+
+ <p class="details"> 
+  <div class="example">
+  
+  <div style="clear:both;">
+
+  <div class="cSelect cSelectWidth roundBottom">
+  
+  <div class="cSelect-wrapper">
+  
+  <div class="cSelect-ArrowDown">
+  </div>
+
+   <span class="cSelect-Selected">JavaScript</span>
+    <ul class="cSelectWidth" style="display:none;">
+     <li>JavaScript</li>
+     <li>C#</li>
+     <li>Boo</li>
+    </ul>
+  </div>
+
+  </div>
+ 
+  <div style="clear:both;"></div>
+  
+  </div>
+
+
+<# foreach(Example e in m_data.m_examples) { #>
+  
+  <pre class="code" code_lang_name="JavaScript">
+
+   <h4 class="soft">
+   <!-- #currenly display the frist example -->
+   <#= e.m_expression #>
+   </h4>
+
+   <p class="details">
+  </pre>
+  
+   <# } #>
+
+</body>
+
+</html>
+
+<!-- #EndTemplate -->

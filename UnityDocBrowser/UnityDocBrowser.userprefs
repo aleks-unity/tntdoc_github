@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Editor\DocBrowser.cs">
+    <Files>
+      <File FileName="Assets\Editor\MemberList.cs" Line="180" Column="27" />
+      <File FileName="Assets\Editor\MemberEditor.cs" Line="111" Column="20" />
+      <File FileName="Assets\Editor\DocBrowser.cs" Line="228" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

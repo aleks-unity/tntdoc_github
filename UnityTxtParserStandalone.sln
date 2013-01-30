@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityTxtParser", "UnityTxtParser\UnityTxtParser.csproj", "{629F0D26-CF0E-4419-BAF2-2A2C9F8F9852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TxtToCsAndCpp", "TxtToCsAndCpp\TxtToCsAndCpp.csproj", "{1C3E11D7-244A-43D9-89AE-7C19C06791D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.CommonTools", "..\Unity.CommonTools\Unity.CommonTools.csproj", "{882B3C08-618B-4D66-B45C-88853106F1AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{629F0D26-CF0E-4419-BAF2-2A2C9F8F9852}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{629F0D26-CF0E-4419-BAF2-2A2C9F8F9852}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{629F0D26-CF0E-4419-BAF2-2A2C9F8F9852}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{629F0D26-CF0E-4419-BAF2-2A2C9F8F9852}.Debug|x86.ActiveCfg = Debug|x86
+		{629F0D26-CF0E-4419-BAF2-2A2C9F8F9852}.Debug|x86.Build.0 = Debug|x86
+		{629F0D26-CF0E-4419-BAF2-2A2C9F8F9852}.Release|Any CPU.ActiveCfg = Release|x86
+		{629F0D26-CF0E-4419-BAF2-2A2C9F8F9852}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{629F0D26-CF0E-4419-BAF2-2A2C9F8F9852}.Release|Mixed Platforms.Build.0 = Release|x86
+		{629F0D26-CF0E-4419-BAF2-2A2C9F8F9852}.Release|x86.ActiveCfg = Release|x86
+		{629F0D26-CF0E-4419-BAF2-2A2C9F8F9852}.Release|x86.Build.0 = Release|x86
+		{1C3E11D7-244A-43D9-89AE-7C19C06791D6}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1C3E11D7-244A-43D9-89AE-7C19C06791D6}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{1C3E11D7-244A-43D9-89AE-7C19C06791D6}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{1C3E11D7-244A-43D9-89AE-7C19C06791D6}.Debug|x86.ActiveCfg = Debug|x86
+		{1C3E11D7-244A-43D9-89AE-7C19C06791D6}.Debug|x86.Build.0 = Debug|x86
+		{1C3E11D7-244A-43D9-89AE-7C19C06791D6}.Release|Any CPU.ActiveCfg = Release|x86
+		{1C3E11D7-244A-43D9-89AE-7C19C06791D6}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{1C3E11D7-244A-43D9-89AE-7C19C06791D6}.Release|Mixed Platforms.Build.0 = Release|x86
+		{1C3E11D7-244A-43D9-89AE-7C19C06791D6}.Release|x86.ActiveCfg = Release|x86
+		{1C3E11D7-244A-43D9-89AE-7C19C06791D6}.Release|x86.Build.0 = Release|x86
+		{882B3C08-618B-4D66-B45C-88853106F1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882B3C08-618B-4D66-B45C-88853106F1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882B3C08-618B-4D66-B45C-88853106F1AF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{882B3C08-618B-4D66-B45C-88853106F1AF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{882B3C08-618B-4D66-B45C-88853106F1AF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{882B3C08-618B-4D66-B45C-88853106F1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{882B3C08-618B-4D66-B45C-88853106F1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{882B3C08-618B-4D66-B45C-88853106F1AF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{882B3C08-618B-4D66-B45C-88853106F1AF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{882B3C08-618B-4D66-B45C-88853106F1AF}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = UnityDocBrowser\UnityDocBrowser.csproj
+	EndGlobalSection
+EndGlobal

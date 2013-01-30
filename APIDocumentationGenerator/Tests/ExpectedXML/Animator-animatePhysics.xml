@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MemberItem id="Animator._animatePhysics" kind="Property">
+  <Property>
+    <ClassName>Animator</ClassName>
+    <Name>animatePhysics</Name>
+    <Type>bool</Type>
+  </Property>
+  <Summary>When turned on, animations will be executed in the physics loop. This is only useful in conjunction with kinematic rigidbodies.</Summary>
+</MemberItem>

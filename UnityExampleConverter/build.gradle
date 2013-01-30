@@ -1,0 +1,36 @@
+// Build script that fetches required UnityScript and Boo assemblies.
+//
+// Update the unityScriptVersion variable and run './gradlew' or './gradlew update'
+// to have the new assemblies copied to lib/UnityScript.
+//
+
+defaultTasks 'update'
+
+buildscript {
+	ext {
+		unityScriptVersion = '0.1.2'
+		unityRepository = 'http://unity-technologies.github.com/kaizen/repositories/unstable'
+	}
+
+	dependencies {
+		classpath 'kaizen:kaizen:0.2.7'
+	}
+
+	repositories {
+		ivy { url unityRepository }
+	}
+}
+
+apply plugin: 'kaizen-lib-client'
+
+configurations {
+	unityScript
+}
+
+dependencies {
+	unityScript "unityscript:UnityScript:$unityScriptVersion"
+}
+
+repositories {
+	ivy { url unityRepository }
+}

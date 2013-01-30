@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MemberItem id="Vector3._x" kind="Field">
+  <Field>
+    <ClassName>Vector3</ClassName>
+    <Name>x</Name>
+    <Type>float</Type>
+  </Field>
+  <Summary>X component of the vector.</Summary>
+</MemberItem>

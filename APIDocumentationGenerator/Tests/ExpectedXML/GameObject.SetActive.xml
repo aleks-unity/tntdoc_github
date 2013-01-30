@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MemberItem id="GameObject.SetActive" kind="Method">
+  <Method>
+    <ClassName>GameObject</ClassName>
+    <MethodName>SetActive</MethodName>
+    <ReturnType>void</ReturnType>
+    <Modifier>static</Modifier>
+  </Method>
+  <Summary>Activates/Deactivates the GameObject.</Summary>
+</MemberItem>

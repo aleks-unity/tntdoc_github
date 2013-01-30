@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MemberItem id="Vector3._sqrMagnitude" kind="Property">
+  <Property>
+    <ClassName>Vector3</ClassName>
+    <Name>sqrMagnitude</Name>
+    <Type>float</Type>
+  </Property>
+  <Summary>Returns the squared length of this vector (RO).</Summary>
+</MemberItem>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MemberItem id="Vector3.ToString" kind="Method">
+  <Method>
+    <ClassName>Vector3</ClassName>
+    <MethodName>ToString</MethodName>
+    <ReturnType>string</ReturnType>
+    <Modifier>static</Modifier>
+  </Method>
+  <Summary>Returns a nicely formatted string for this vector.</Summary>
+</MemberItem>

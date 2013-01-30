@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D638FB17-0B2B-4285-AEF5-59E710660210}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>UnityHTMLGenerator</RootNamespace>
+    <AssemblyName>UnityHTMLGenerator</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\NUnit\bin\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Templates\PropertyTemplatePartial.cs" />
+    <Compile Include="Templates\PropertyTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PropertyTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlGeneratorConsumer.cs" />
+    <Compile Include="HtmlGeneratorMain.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Templates\SimpleHtml1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SimpleHtml.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\SimpleHtmlPartial.cs" />
+    <Compile Include="Templates\TemplateDatas.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnderlyingModel\UnderlyingModel.csproj">
+      <Project>{5888A64B-4E25-401B-8CEF-F8692E919704}</Project>
+      <Name>UnderlyingModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityDocAnatomizer\UnityDocAnatomizer.csproj">
+      <Project>{F324A963-94BE-4DBA-B08E-9DF2CF26FE82}</Project>
+      <Name>UnityDocAnatomizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityTxtParser\UnityTxtParser.csproj">
+      <Project>{629F0D26-CF0E-4419-BAF2-2A2C9F8F9852}</Project>
+      <Name>UnityTxtParser</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\PropertyTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>PropertyTemplate.cs</LastGenOutput>
+      <CustomToolNamespace>UnityHtmlGenerator</CustomToolNamespace>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\SimpleHtml.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SimpleHtml1.cs</LastGenOutput>
+      <CustomToolNamespace>UnityHtmlGenerator</CustomToolNamespace>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tests\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

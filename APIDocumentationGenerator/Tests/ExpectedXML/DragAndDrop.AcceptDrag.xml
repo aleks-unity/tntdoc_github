@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MemberItem id="DragAndDrop.AcceptDrag" kind="Method">
+  <Method>
+    <ClassName>DragAndDrop</ClassName>
+    <MethodName>AcceptDrag</MethodName>
+    <ReturnType>void</ReturnType>
+    <Modifier>static</Modifier>
+  </Method>
+  <Summary>Accept a drag operation.</Summary>
+</MemberItem>
