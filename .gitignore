@@ -1,0 +1,14 @@
+*.exe*
+APIDocumentationGenerator/obj/*
+APIDocumentationGenerator/bin/*
+UnderlyingModel/bin/*
+UnderlyingModel/obj/*
+UnityExampleConverter/cssrc/bin/*
+UnityExampleConverter/cssrc/obj/*
+UnityExampleConverter/cstests/bin/*
+UnityExampleConverter/cstests/obj/*
+DocBuilderTools/bin/*
+DocBuilderTools/obj/*
+BookBuilder/bin/*
+BookBuilder/obj/*
+UnityDocBrowser/Assets/Editor/*
