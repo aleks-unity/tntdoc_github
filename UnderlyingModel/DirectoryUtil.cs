@@ -94,11 +94,16 @@ namespace UnderlyingModel
 
 		public static bool TryGetAllMemFiles(out string[] memFiles)
 		{
+			return TryGetAllMemFiles(out memFiles, MemberDocsDirFullPath);
+		}
+
+		public static bool TryGetAllMemFiles(out string[] memFiles, string extDirectory)
+		{
 			memFiles = null;
-	
+
 			try
 			{
-				memFiles =  Directory.GetFiles(MemberDocsDirFullPath, MemExtensionMask).ToArray();
+				memFiles = Directory.GetFiles(extDirectory, MemExtensionMask).ToArray();
 			}
 			catch (DirectoryNotFoundException d)
 			{

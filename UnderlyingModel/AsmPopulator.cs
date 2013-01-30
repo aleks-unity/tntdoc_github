@@ -1,14 +1,14 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using Mono.Cecil;
 using Mono.Collections.Generic;
-using NUnit.Framework;
 
 namespace UnderlyingModel
 {
 	public partial class NewDataItemProject
 	{
+		
+
 		private string[] m_DllLocations = new string[] { DirectoryUtil.EngineDllLocation, DirectoryUtil.EditorDllLocation };
 		private ModuleDefinition[] m_AsmModules;
 		private bool m_ScanForPrivateMembers = false;

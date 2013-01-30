@@ -55,6 +55,7 @@
     <Compile Include="AssemblyLocation.cs" />
     <Compile Include="DocPopulator.cs" />
     <Compile Include="MemberItem.cs" />
+    <Compile Include="MemberItemDirectories.cs" />
     <Compile Include="MemberSubSection.cs" />
     <Compile Include="NewDataItemProject.cs" />
     <Compile Include="Presence.cs" />
