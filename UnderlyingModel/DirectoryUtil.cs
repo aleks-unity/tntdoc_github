@@ -45,9 +45,9 @@ namespace UnderlyingModel
 
 	    public static string ScriptRefOutput = Path.Combine(RootDirName,
 	                                                        "build/UserDocumentation/ActualDocumentation/Documentation/ScriptReference");
-		public static string BuildUserDocDir = Path.Combine(RootDirName, "build/CombinedAssemblies");
-		public static string EngineDllLocation = Path.Combine(BuildUserDocDir, "UnityEngine.dll");
-		public static string EditorDllLocation = Path.Combine(BuildUserDocDir, "UnityEditor.dll");
+		public static string CombinedAssembliesDir = Path.Combine(RootDirName, "build/CombinedAssemblies");
+		public static string EngineDllLocation = Path.Combine(CombinedAssembliesDir, "UnityEngine.dll");
+		public static string EditorDllLocation = Path.Combine(CombinedAssembliesDir, "UnityEditor.dll");
 		
 		public static bool IsEditorMono(string fname)
 		{

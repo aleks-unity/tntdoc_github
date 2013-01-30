@@ -97,15 +97,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\XMLGenerationTests.cs" />
     <Compile Include="Tests\HTMLnamingTests.cs" />
-    <Compile Include="TypePageGenerator.cs" />
     <Compile Include="PageGeneratorBase.cs" />
     <Compile Include="UnityDocumentation.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DocBuilderTools\DocBuilderTools.csproj">
-      <Project>{4CD3152D-E643-4B56-AD08-EFC834195309}</Project>
-      <Name>DocBuilderTools</Name>
-    </ProjectReference>
     <ProjectReference Include="..\UnderlyingModel\UnderlyingModel.csproj">
       <Project>{5888A64B-4E25-401B-8CEF-F8692E919704}</Project>
       <Name>UnderlyingModel</Name>
